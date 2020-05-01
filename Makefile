@@ -22,7 +22,7 @@ help: ## Show this help
 	    	make up"
 
 
-init: back-npm front-npm build-all ## init project
+init: back-npm front-npm build-all up ## init project
 
 build: ## rebuild all containers
 	$(docker_compose_bin) build
