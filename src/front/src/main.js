@@ -1,7 +1,9 @@
+import '@babel/polyfill';
 import Vue from 'vue';
 import Vuex from 'vuex';
 import Vuetify from 'vuetify';
 
+import 'vuetify/dist/vuetify.min.css';
 
 import App from './App.vue';
 import store from './store';
@@ -12,10 +14,12 @@ Vue.use(Vuex);
 
 
 window.$vue = new Vue({
+  debug: true,
   el: '#app',
-  render: h => h(App),
   router,
   store,
+  components: { App },
+  template: '<App/>',
 });
 
 store.dispatch('project/loadAll');
