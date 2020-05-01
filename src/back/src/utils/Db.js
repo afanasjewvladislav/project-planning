@@ -42,6 +42,8 @@ class Db {
     } catch (err) {
       this.logger.error('DB Database doesn`t connected');
       console.log(err);
+      // попытка переподключения
+      await this.connect();
     }
     return false;
   }
