@@ -1,6 +1,6 @@
 {
 	"name": "front",
-	"version": "1.0.2",
+	"version": "1.1.0",
 	"description": "front",
 	"main": "main.js",
 	"scripts": {
@@ -12,7 +12,8 @@
 		"test": "jest",
 		"first-release": "standard-version --first-release",
 		"set-version": "standard-version",
-		"set-alpha-version": "standard-version --prerelease alpha"
+		"set-alpha-version": "standard-version --prerelease alpha",
+		"set-minor-version": "standard-version --release-as minor"
 	},
 	"author": "Afanasjew Vladislav",
 	"license": "MIT",
